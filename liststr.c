@@ -53,7 +53,7 @@ new_node = malloc(sizeof(list_t));
 if (!new_node)
 return (NULL);
 _memset((void *)new_node, 0, sizeof(list_t));
-new_node->num = num; 
+new_node->num = num;
 if (str)
 {
 new_node->str = _strdup(str);
