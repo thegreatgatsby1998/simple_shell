@@ -154,7 +154,7 @@ if (WIFEXITED(info->status))
 {
 info->status = WEXITSTATUS(info->status);
 if (info->status == 126)
-print_error(info, "Permission denied\n")
+print_error(info, "Permission denied\n");
 }
 }
 }
