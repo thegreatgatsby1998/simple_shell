@@ -74,7 +74,7 @@ _strcpy(buf, var);
 _strcat(buf, "=");
 _strcat(buf, value);
 node = info->env;
-while (node
+while (node)
 {
 p = starts_with(node->str, var);
 if (p && *p == '=')
@@ -90,4 +90,6 @@ add_node_end(&(info->env), buf, 0);
 free(buf);
 info->env_changed = 1;
 return (0);
+
+B
 }
